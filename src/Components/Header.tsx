@@ -1,12 +1,12 @@
-import {CgClose} from "react-icons/cg";
+
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
-import {FaBars} from "react-icons/fa";
 import ThemeBtn from "./ThemeBtn";
 import logoblack from "../assets/logo-black.svg";
 import logowhite from "../assets/logo-white.svg"
 import TopBar from "./TopBar";
 import useTheme from "../Context/Theme";
+import { Menu,X } from "lucide-react";
 
 
 
@@ -39,18 +39,18 @@ const Header = () => {
     ];
 
     return (
-        <header className="shadow sticky z-50 top-0">
-          <TopBar />
+        <header className=" sticky z-50 top-0">
+          <TopBar  />
             <nav
-                className="bg-white border-gray-200 px-4 lg:px-6 py-2  dark:bg-zinc-900 dark:text-white">
+                className="bg-white border-gray-200 px-4 py-2 lg:px-6  dark:bg-zinc-900 dark:text-white">
                 <div
-                    className="flex  gap-3  items-center mx-auto max-w-screen-xl justify-between">
-                    <div>
-                        <NavLink to="/" className="text-2xl logo flex items-center">
-                            <img src={themeMode === 'light' ? logoblack : logowhite} alt="....logo...."/>
+                    className="flex  gap-3 items-center mx-auto max-w-screen-xl justify-between">
+                    <div className="">
+                        <NavLink to="/" className="">
+                            <img className="w-72 sm:w-60" src={themeMode === 'light' ? logoblack : logowhite} alt="....logo...."/>
                         </NavLink>
                     </div>
-                    <div className="lg:flex w-full justify-between">
+                    <div className="lg:flex w-full justify-between items-center">
                         <div className="hidden lg:flex  justify-center text-center mx-auto ">
                             <ol className=" flex  ">
                                 {menuItems.map((item) => (
@@ -83,19 +83,19 @@ const Header = () => {
                     {/* hamburger icon */}
                     <div className="lg:hidden z-10" onClick={HanldeNav}>
                         {!nav
-                            ? (<FaBars
-                                size={30}
+                            ? (<Menu
+                                size={40}
                                 className="cursor-pointer hover:text-sec active:text-sec dark:text-white"/>)
-                            : (<CgClose
-                                size={30}
-                                className="hover:rotate-6  hover:text-sec  cursor-pointer dark:text-white "/>)}
+                            : (<X
+                                size={40}
+                                className="hover:rotate-6 absolute top-4 right-4  hover:text-sec  cursor-pointer dark:text-white "/>)}
                     </div>
 
                     {/* mobile menu */}
                     <div
                         onClick={HanldeNav}
                         className={nav
-                        ? "w-full overflow-y-hidden lg:hidden ease-in duration-300 absolute left-0 top-0 h-" +
+                        ? "w-full overflow-y-hidden lg:hidden  absolute left-0 top-0 h-" +
                             "screen dark:bg-zinc-900 dark:text-white bg-white px-4 py-7"
                         : "absolute top-0 left-[-100%] h-screen ease-in duration-500"}>
                         <div className="h-full w-full text-center pt-12 ">
@@ -107,7 +107,7 @@ const Header = () => {
                                         ? "text-sec"
                                         : "text-black dark:text-white"}`}
                                         to={item.path}>
-                                        <li className="nav-item text-[16px] font-medium">
+                                        <li className="nav-item text-[19px] font-medium">
                                             {item.name}{" "}
                                         </li>
                                     </NavLink>

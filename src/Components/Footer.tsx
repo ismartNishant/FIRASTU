@@ -1,66 +1,70 @@
-import { Link } from 'react-router-dom';
-import { FaFacebookF, FaGithub, FaTwitter, FaDiscord, FaDribbble } from 'react-icons/fa6';
+import { Link, NavLink } from 'react-router-dom';
+import logoblack from "../assets/logo-black.svg";
+import logowhite from "../assets/logo-white.svg"
+import useTheme from '../Context/Theme';
+import { BsFacebook, BsInstagram, BsTwitterX, BsWhatsapp } from 'react-icons/bs';
 
 export default function Footer() {
+    const { themeMode, } = useTheme();
+
     return (
         <footer className="bg-white border-y dark:border-0 dark:dark:bg-zinc-900  dark:text-white  ">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0 w-64 bg-red">
-                        <Link to='/' className="text-2xl flex items-center font-bold uppercase" >
-                        <span className="text-sky-400 pe-1">  Your </span> TODO
-                        </Link>
+                        <NavLink to="/" className="">
+                            <img className="w-72 sm:w-60" src={themeMode === 'light' ? logoblack : logowhite} alt="....logo...." />
+                        </NavLink>
                         <p className='mt-3 dark:text-gray-400'>Lorem ipsum dolor, sit amet consectetur adipisicin cumque laudantium amet enim corrupti ab, beatae minima.</p>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-200">Resources</h2>
                             <ul className="text-gray-500 font-medium dark:text-gray-400">
-                                <Link to="/"  >
-                                    <li className="mb-4 ">
-                                        Home
-                                    </li>
-                                </Link>
-                                <Link to="/about" >
-                                    <li className='mb-4'>
-                                        About
-                                    </li>
-                                </Link>
+
+                                <li className="mb-4 ">
+                                    <NavLink to="/">  Home</NavLink>
+                                </li>
+                                <li className='mb-4'>
+                                    <NavLink to="/about"> About </NavLink>
+                                </li>
+                                <li className='mb-4'>
+                                    <NavLink to="/contact"> contact </NavLink>
+                                </li>
+                                <li className='mb-4'>
+                                    <NavLink to="/upcoming"> Upcoming </NavLink>
+                                </li>
+
                             </ul>
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-200">Follow us</h2>
                             <ul className="text-gray-500 font-medium dark:text-gray-400">
                                 <li className="mb-4">
-                                    <a
-                                        href="https://github.com/ismartNishant"
-                                        className="hover:underline"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
+                                    <NavLink to="/">
                                         Github
-                                    </a>
+                                    </NavLink>
                                 </li>
-                                <Link to="/discord" >
-                                    <li >
+                                <li >
+                                    <NavLink to="/">
                                         Discord
-                                    </li>
-                                </Link>
+                                    </NavLink>
+                                </li>
                             </ul>
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-200 uppercase">Legal</h2>
                             <ul className="text-gray-500 font-medium dark:text-gray-400">
-                                <Link to="/" >
+                                <NavLink to="/" >
                                     <li className="mb-4 ">
                                         Privacy Policy
                                     </li>
-                                </Link>
-                                <Link to="/" >
+                                </NavLink>
+                                <NavLink to="/" >
                                     <li >
                                         Terms &amp; Conditions
                                     </li>
-                                </Link>
+                                </NavLink>
                             </ul>
                         </div>
                     </div>
@@ -69,27 +73,24 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2024
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            Nishant Rajput
-                        </a>
-                        . All Rights Reserved.
+                        <NavLink to="/" className="hover:underline px-1 text-sec font-semibold">
+                            Firastu.com
+                        </NavLink>
+                         All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="" className="text-gray-500 hover:text-sky-400">
-                            <FaFacebookF size={20} />
-                        </Link>
-                        <Link to="" className="text-gray-500 hover:text-sky-400">
-                            <FaDiscord size={20} />
-                        </Link>
-                        <Link to="" className="text-gray-500 hover:text-sky-400">
-                            <FaTwitter size={20} />
-                        </Link>
-                        <Link to="" className="text-gray-500 hover:text-sky-400">
-                            <FaGithub size={20} />
-                        </Link>
-                        <Link to="" className="text-gray-500 hover:text-sky-400">
-                            <FaDribbble size={20} />
-                        </Link>
+                        <NavLink to="" className="text-gray-500 hover:text-sky-400">
+                            <BsFacebook size={23} />
+                        </NavLink>
+                        <NavLink to="" className="text-gray-500 hover:text-sky-400">
+                            <BsInstagram size={20} />
+                        </NavLink>
+                        <NavLink to="" className="text-gray-500 hover:text-sky-400">
+                            <BsTwitterX size={20} />
+                        </NavLink>
+                        <NavLink to="" className="text-gray-500 hover:text-sky-400">
+                            <BsWhatsapp size={20} />
+                        </NavLink>
                     </div>
                 </div>
             </div>

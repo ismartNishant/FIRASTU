@@ -1,37 +1,33 @@
+import { BsFacebook, BsInstagram ,BsTwitterX, BsWhatsapp} from "react-icons/bs";
 import { AiFillPhone, AiOutlineClockCircle } from "react-icons/ai";
-import {
-    FaFacebook,
-    FaTwitter,
-    FaInstagram,
-    FaGooglePlusG,
-} from "react-icons/fa";
+
 import { NavLink } from "react-router-dom";
 
 
 const TopBar = () => {
 
     return (
-        <div className="flex items-center justify-between px-4 py-1 bg-gradient-to-r from-sec to-pri  text-black ">
+        <div className="flex items-center justify-between px-4 py-2 sm:py-1 bg-gradient-to-r from-sec to-pri  text-black  ">
             <div>
                 <ul className="flex gap-4 text-white">
                     <li className="socials  ">
                         <a className="" href="#">
-                            <FaFacebook size={25}  />
+                            <BsFacebook size={23}  />
                         </a>
                     </li>
                     <li className="socials  ">
                         <a className="" href="#">
-                            <FaTwitter size={25} />
+                            <BsTwitterX size={20} />
                         </a>
                     </li>
                     <li className="socials  ">
                         <a className="" href="#">
-                            <FaInstagram size={25} />
+                            <BsInstagram size={22} />
                         </a>
                     </li>
                     <li className="socials  ">
                         <a className="" href="#">
-                            <FaGooglePlusG size={25} />
+                            <BsWhatsapp  size={22} />
                         </a>
                     </li>
                 </ul>
