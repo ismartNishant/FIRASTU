@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0 w-64 bg-red">
                         <Link to='/' className="text-2xl flex items-center font-bold uppercase" >
-                        <span className="text-pink-500 pe-1">  Your </span> TODO
+                        <span className="text-sky-400 pe-1">  Your </span> TODO
                         </Link>
                         <p className='mt-3 dark:text-gray-400'>Lorem ipsum dolor, sit amet consectetur adipisicin cumque laudantium amet enim corrupti ab, beatae minima.</p>
                     </div>
@@ -75,19 +75,19 @@ export default function Footer() {
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="" className="text-gray-500 hover:text-pink-500">
+                        <Link to="" className="text-gray-500 hover:text-sky-400">
                             <FaFacebookF size={20} />
                         </Link>
-                        <Link to="" className="text-gray-500 hover:text-pink-500">
+                        <Link to="" className="text-gray-500 hover:text-sky-400">
                             <FaDiscord size={20} />
                         </Link>
-                        <Link to="" className="text-gray-500 hover:text-pink-500">
+                        <Link to="" className="text-gray-500 hover:text-sky-400">
                             <FaTwitter size={20} />
                         </Link>
-                        <Link to="" className="text-gray-500 hover:text-pink-500">
+                        <Link to="" className="text-gray-500 hover:text-sky-400">
                             <FaGithub size={20} />
                         </Link>
-                        <Link to="" className="text-gray-500 hover:text-pink-500">
+                        <Link to="" className="text-gray-500 hover:text-sky-400">
                             <FaDribbble size={20} />
                         </Link>
                     </div>
