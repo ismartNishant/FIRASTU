@@ -3,8 +3,7 @@ import "../App.css"
 import Header from '../Components/Header'
 import { ThemeProvider } from '../Context/Theme'
 import { useState, useEffect } from 'react'
-import Home from '../Components/Home'
-
+import { Outlet } from 'react-router'
 
 const RootLayout = () => {
   //functionality for theme
@@ -28,7 +27,7 @@ const RootLayout = () => {
   }, [themeMode]);
 
 
-  
+
 
 
 
@@ -36,14 +35,15 @@ const RootLayout = () => {
 
 
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme, setThemeMode }}>
-     
-        <div className=' relative'>
-          <Header />
-          <main className='p-3 sm:p-10 mx-auto'>
-            <Home   />
-          </main>
-          <Footer />
-        </div>
+      <div className=' relative'>
+        <Header />
+        <main className='mx-auto max-w-screen-xl px-4 py-2 md:p-0'>
+          <div className='mx-auto dark:text-white min-h-[600px] sm:min-h-[600px] '>
+            <Outlet />
+          </div>
+        </main>
+        <Footer />
+      </div>
     </ThemeProvider>
 
 

@@ -42,7 +42,7 @@ const Header = () => {
         <header className=" sticky z-50 top-0">
           <TopBar  />
             <nav
-                className="bg-white border-gray-200 px-4 py-2 lg:px-6  dark:bg-zinc-900 dark:text-white">
+                className="bg-white border-gray-200 px-3 py-2 lg:px-6  dark:bg-zinc-900 dark:text-white">
                 <div
                     className="flex  gap-3 items-center mx-auto max-w-screen-xl justify-between">
                     <div className="">

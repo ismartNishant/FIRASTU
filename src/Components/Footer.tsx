@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import logoblack from "../assets/logo-black.svg";
 import logowhite from "../assets/logo-white.svg"
 import useTheme from '../Context/Theme';
@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0 w-64 bg-red">
                         <NavLink to="/" className="">
-                            <img className="w-72 sm:w-60" src={themeMode === 'light' ? logoblack : logowhite} alt="....logo...." />
+                            <img className="w-56 sm:w-60" src={themeMode === 'light' ? logoblack : logowhite} alt="....logo...." />
                         </NavLink>
                         <p className='mt-3 dark:text-gray-400'>Lorem ipsum dolor, sit amet consectetur adipisicin cumque laudantium amet enim corrupti ab, beatae minima.</p>
                     </div>
