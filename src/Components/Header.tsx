@@ -39,7 +39,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="w-full z-50 top-0 fixed">
+        <header className="w-full z-50 top-0 fixed bg-black/20">
           {/* <TopBar  /> */}
             <nav
                 className=" border-gray-200 px-3 py-2 lg:px-6  ">
