@@ -1,6 +1,6 @@
 import {  NavLink } from 'react-router-dom';
-import logoblack from "../assets/logo-black.svg";
-import logowhite from "../assets/logo-white.svg"
+import logoblack from "../assets/logos/logo-black.svg";
+import logowhite from "../assets/logos/logo-white.svg"
 import useTheme from '../Context/Theme';
 import { BsFacebook, BsInstagram, BsTwitterX, BsWhatsapp } from 'react-icons/bs';
 
@@ -11,11 +11,13 @@ export default function Footer() {
         <footer className="bg-white border-y dark:border-0 dark:dark:bg-zinc-900  dark:text-white  ">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
-                    <div className="mb-6 md:mb-0 w-64 bg-red">
+                    <div className="mb-6 md:mb-0 w-full sm:w-96 bg-red">
                         <NavLink to="/" className="">
                             <img className="w-56 sm:w-60" src={themeMode === 'light' ? logoblack : logowhite} alt="....logo...." />
                         </NavLink>
-                        <p className='mt-3 dark:text-gray-400'>Lorem ipsum dolor, sit amet consectetur adipisicin cumque laudantium amet enim corrupti ab, beatae minima.</p>
+                        <p className='mt-3 text-sm text-gray-500'>Our travel company specializes in adrenaline-pumping treks and exhilarating adventure activities, 
+                        offering unforgettable experiences in some of the world's most breathtaking destinations. With a passion for exploration and a commitment 
+                        to safety and sustainability, we strive to create transformative journeys that leave a lasting impact on both travelers and the communities we visit.</p>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>

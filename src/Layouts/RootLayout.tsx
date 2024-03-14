@@ -36,9 +36,9 @@ const RootLayout = () => {
 
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme, setThemeMode }}>
       <div className=' relative'>
-        <Header />
-        <main className='mx-auto max-w-screen-xl px-4 py-2 md:p-0'>
-          <div className='mx-auto dark:text-white min-h-[600px] sm:min-h-[600px] '>
+        <Header  />
+        <main className='mx-auto  '>
+          <div className='mx-auto dark:text-white min-h-[600px] '>
             <Outlet />
           </div>
         </main>

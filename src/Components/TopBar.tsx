@@ -1,34 +1,34 @@
 import { BsFacebook, BsInstagram ,BsTwitterX, BsWhatsapp} from "react-icons/bs";
 import { AiFillPhone, AiOutlineClockCircle } from "react-icons/ai";
 
-import { NavLink } from "react-router-dom";
+import { NavLink ,Link} from "react-router-dom";
 
 
 const TopBar = () => {
 
     return (
-        <div className="flex items-center justify-between px-4 py-2 sm:py-1 bg-gradient-to-r from-sec to-pri  text-black  ">
+        <div className="flex items-center justify-between px-4 py-1 sm:py-1 bg-gradient-to-r from-sec to-pri  text-black  ">
             <div>
                 <ul className="flex gap-4 text-white">
                     <li className="socials  ">
-                        <a className="" href="#">
+                        <Link className="" to="/">
                             <BsFacebook size={23}  />
-                        </a>
+                        </Link>
                     </li>
                     <li className="socials  ">
-                        <a className="" href="#">
+                        <Link className=""  to="/">
                             <BsTwitterX size={20} />
-                        </a>
+                        </Link>
                     </li>
                     <li className="socials  ">
-                        <a className="" href="#">
+                        <Link className=""  to="/">
                             <BsInstagram size={22} />
-                        </a>
+                        </Link>
                     </li>
                     <li className="socials  ">
-                        <a className="" href="#">
+                        <Link className=""  to="/">
                             <BsWhatsapp  size={22} />
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@ const TopBar = () => {
                 </div>
                 <NavLink
                     to="/"
-                    className="px-3 py-[5px] font-medium text-[14px]  border-[3px] border-black text-black hover:bg-black hover:text-pri">
+                    className="px-3 py-[3px] font-medium text-[14px]  border-[3px] border-black text-black hover:bg-black hover:text-pri">
                     Get A free Quote
                 </NavLink>
 
