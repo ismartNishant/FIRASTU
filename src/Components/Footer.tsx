@@ -1,28 +1,28 @@
 import {  NavLink } from 'react-router-dom';
 import logoblack from "../assets/logos/logo-black.svg";
-import logowhite from "../assets/logos/logo-white.svg"
-import useTheme from '../Context/Theme';
+// import logowhite from "../assets/logos/logo-white.svg"
+// import useTheme from '../Context/Theme';
 import { BsFacebook, BsInstagram, BsTwitterX, BsWhatsapp } from 'react-icons/bs';
 
 export default function Footer() {
-    const { themeMode, } = useTheme();
+    // const { themeMode, } = useTheme();
 
     return (
-        <footer className="bg-white border-y dark:border-0 dark:dark:bg-zinc-900  dark:text-white  ">
+        <footer className="bg-white border-y  ">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-                <div className="md:flex md:justify-between">
-                    <div className="mb-6 md:mb-0 w-full sm:w-96 bg-red">
+                <div className="sm:flex sm:justify-between flex-wrap">
+                    <div className="mb-6 md:mb-0 sm:max-w-full lg:max-w-sm  max-w-screen-sm bg-red">
                         <NavLink to="/" className="">
-                            <img className="w-56 sm:w-60" src={themeMode === 'light' ? logoblack : logowhite} alt="....logo...." />
+                            <img className=" w-40 sm:w-60" src={ logoblack } alt="....logo...." />
                         </NavLink>
-                        <p className='mt-3 text-sm text-gray-500'>Our travel company specializes in adrenaline-pumping treks and exhilarating adventure activities, 
+                        <p className=' my-3 sm:my-5 sm:text-[12px] text-gray-500 text-[12px]'>Our travel company specializes in adrenaline-pumping treks and exhilarating adventure activities, 
                         offering unforgettable experiences in some of the world's most breathtaking destinations. With a passion for exploration and a commitment 
                         to safety and sustainability, we strive to create transformative journeys that leave a lasting impact on both travelers and the communities we visit.</p>
                     </div>
-                    <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 ">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-200">Resources</h2>
-                            <ul className="text-gray-500 font-medium dark:text-gray-400">
+                            <h2 className="mb-5 text-sm font-semibold text-gray-900 uppercase ">Resources</h2>
+                            <ul className="text-gray-500 font-medium ">
 
                                 <li className="mb-4 ">
                                     <NavLink to="/">  Home</NavLink>
@@ -40,8 +40,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-200">Follow us</h2>
-                            <ul className="text-gray-500 font-medium dark:text-gray-400">
+                            <h2 className="mb-5 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
+                            <ul className="text-gray-500 font-medium ">
                                 <li className="mb-4">
                                     <NavLink to="/">
                                         Github
@@ -55,8 +55,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-200 uppercase">Legal</h2>
-                            <ul className="text-gray-500 font-medium dark:text-gray-400">
+                            <h2 className="mb-5 text-sm font-semibold text-gray-900  uppercase">Legal</h2>
+                            <ul className="text-gray-500 font-medium ">
                                 <NavLink to="/" >
                                     <li className="mb-4 ">
                                         Privacy Policy
@@ -64,7 +64,7 @@ export default function Footer() {
                                 </NavLink>
                                 <NavLink to="/" >
                                     <li >
-                                        Terms &amp; Conditions
+                                        Terms &amp;  Conditions
                                     </li>
                                 </NavLink>
                             </ul>
@@ -73,14 +73,14 @@ export default function Footer() {
                 </div>
                 <hr className="my-6 border-gray-200  sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center">
+                    <p className="text-sm text-gray-500 text-center sm:text-start">
                         © 2024
                         <NavLink to="/" className="hover:underline px-1 text-sec font-semibold">
                             Firastu.com
                         </NavLink>
                          All Rights Reserved.
-                    </span>
-                    <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                    </p>
+                    <div className="flex mt-4 space-x-5 justify-center sm:mt-0">
                         <NavLink to="" className="text-gray-500 hover:text-sky-400">
                             <BsFacebook size={23} />
                         </NavLink>
