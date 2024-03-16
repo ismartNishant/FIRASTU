@@ -44,7 +44,7 @@ const Home: FC = () => {
     }, []);
 
     return (
-        <div className='home  relative w-fll h-[100vh] flex flex-col justify-center md:px-28  px-4 text-white'>
+        <div className='home  relative w-fll h-[100vh] flex flex-col justify-center md:px-28  px-4 text-white bg-gradient-to-r from-pri to-sec '>
             <video className='video-slide absolute top-0 left-0 z-0 w-full h-full object-cover active' src={v1} autoPlay muted loop></video>
             <video className='video-slide absolute top-0 left-0 z-0 w-full h-full object-cover' src={v2} autoPlay muted loop></video>
             <video className='video-slide absolute top-0 left-0 z-0 w-full h-full object-cover' src={v6} autoPlay muted loop></video>
