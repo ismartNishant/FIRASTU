@@ -164,11 +164,11 @@ const Home: FC = () => {
 
 
             <div className='slider-navigation relative flex justify-center items-center z-20 -bottom-28  md:-bottom-10  mb-5'>
-                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white active'></div>
-                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white'></div>
-                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white'></div>
-                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white'></div>
-                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white'></div>
+                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white hover:bg-pri active'></div>
+                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white hover:bg-pri'></div>
+                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white hover:bg-pri'></div>
+                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white hover:bg-pri'></div>
+                <div className='nav-btn cursor-pointer rounded-full border-[3px] border-white hover:bg-pri'></div>
             </div>
         </div>
     );

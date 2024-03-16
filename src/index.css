@@ -35,11 +35,11 @@ sec: "#08A6FF", */
   }
 
   .btn1 {
-    @apply py-2 px-4 bg-gradient-to-r from-sec to-pri hover:scale-90 duration-300 ease-in-out
+    @apply py-2 px-4 bg-gradient-to-r from-sec to-pri hover:scale-75 duration-300 hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-sec
   }
 
   .btn2 {
-    @apply px-3 py-2 sm:px-5 sm:py-3 bg-white text-[14px] sm:text-[16px] font-medium text-sec rounded-sm hover:scale-90 duration-300 ease-in-out
+    @apply px-3 py-2 sm:px-5 sm:py-3 bg-white text-[14px] sm:text-[16px] font-medium hover:bg-gradient-to-r hover:from-sec hover:to-pri hover:text-white text-sec rounded-sm hover:scale-90 duration-200 ease-in
   }
 
 }

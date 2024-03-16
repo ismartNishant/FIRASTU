@@ -68,7 +68,7 @@ const Header = () => {
                         <div className="hidden lg:block  gap-2">
                             <NavLink
                                 to="/"
-                                className={`btn1 font-medium bg-gradient-to-r bg-pri from-sec rounded-sm text-white `}>
+                                className="btn1 font-medium bg-gradient-to-r bg-pri from-sec rounded-sm text-white ">
                                 Book Now
                             </NavLink>
                           
