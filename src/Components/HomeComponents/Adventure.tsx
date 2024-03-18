@@ -9,7 +9,7 @@ const Adventure: FC<AdventureProps> = () => {
         <div>
             <h1 className='text-3xl md:text-4xl font-baloo font-bold text-center '>Adventure Activities</h1>
 
-            <div className='flex justify-center flex-wrap gap-5 py-10'>
+            <div className='flex justify-center flex-wrap gap-5 gap-y-10 py-10'>
                 <div className='flex flex-col w-96 justify-between  '>
                     <img className='h-56 w-full mx-auto  object-cover rounded-md' src={trek1} />
                     <div className='text-center'>
