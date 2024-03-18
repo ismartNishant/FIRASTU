@@ -5,7 +5,6 @@ import PageNotFound from './Components/PageNotFound';
 import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import Gallery from './Components/Gallery';
 import Upcoming from './Components/Upcoming';
 
 
@@ -18,7 +17,6 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/upcoming' element={<Upcoming />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/gallery' element={<Gallery />} />
         <Route path='*' element={<PageNotFound />} />
       </Route>
     )

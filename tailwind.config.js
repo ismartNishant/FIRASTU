@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        pri: '#41FBF0',
+        pri: '#13FFF9',
         sec: '#08A6FF'
       }
     }
