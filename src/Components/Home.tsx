@@ -1,14 +1,18 @@
 import { FC } from 'react';
 import Hero from './HomeComponents/Hero';
-import Adventure_idea from './HomeComponents/Adventure-idea';
+import Adventure from './HomeComponents/Adventure';
+import NewsLetter from './HomeComponents/NewsLetter';
+
+
 
 const Home: FC = () => {
 
     return (
         <div>
             <Hero />
-            <div className='max-w-screen-xl mx-auto  py-10 px-4'>
-                <Adventure_idea />
+            <div className='max-w-screen-xl mx-auto  py-10 px-4 relative'>
+              <Adventure />
+              <NewsLetter />
             </div>
         </div>
     );
