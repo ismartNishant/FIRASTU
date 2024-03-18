@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100..900&family=Lobster&family=Lugrasimo&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Happy+Monkey&family=Inter:wght@100..900&family=Lobster&family=Lugrasimo&family=Marcellus+SC&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 /* font-family: 'Comfortaa', sans-serif;
+font-family: "Marcellus SC", serif;
+font-family: "Baloo Thambi 2", system-ui;
+font-family: "Happy Monkey", system-ui;
 font-family: 'Dancing Script', cursive;
 font-family: 'Lobster', sans-serif;
 font-family: 'Lugrasimo', cursive;
@@ -8,6 +12,7 @@ font-family: 'Roboto', sans-serif; */
 :root {
   --pri-one: #41FBF0;
   --pri-two: #08A6FF;
+  --swiper-pagination-bottom: 5px;
 }
 
 /* pri: "#41FBF0",
@@ -31,17 +36,20 @@ sec: "#08A6FF", */
   }
 
   footer li {
-    @apply text-sm  hover:underline hover:underline-offset-8 hover:text-cyan-400 cursor-pointer duration-300 decoration-cyan-400
+    @apply text-sm hover:underline hover:underline-offset-8 hover:text-cyan-400 cursor-pointer duration-300 decoration-cyan-400
   }
 
   .btn1 {
-    @apply py-2 px-4 bg-gradient-to-r from-sec to-pri hover:scale-75 duration-300 hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-sec
+    @apply py-2 px-4 bg-gradient-to-r from-sec to-pri  duration-300 hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-sec ease-in
   }
 
   .btn2 {
     @apply px-3 py-2 sm:px-5 sm:py-3 bg-white text-[14px] sm:text-[16px] font-medium hover:bg-gradient-to-r hover:from-sec hover:to-pri hover:text-white text-sec rounded-sm hover:scale-90 duration-200 ease-in
   }
-
+  
+  .btn3 {
+    @apply py-2 px-4 bg-gradient-to-r from-sec to-pri  rounded-sm hover:scale-90 duration-200 ease-in
+  }
 }
 
 @layer components {
@@ -49,26 +57,51 @@ sec: "#08A6FF", */
     font-family: 'Lobster', sans-serif;
   }
 
-  .font-inter{
+  .font-inter {
     font-family: 'Inter', sans-serif;
   }
-  .font-poppins{
+
+  .font-poppins {
     font-family: 'Poppins', sans-serif;
   }
 
-  .font-comfortaa{
+  .font-marcellus {
+    font-family: "Marcellus SC", serif;
+  }
+
+  .font-baloo {
+    font-family: "Baloo Thambi 2", system-ui;
+  }
+
+  .font-happy-monky {
+    font-family: "Happy Monkey", system-ui;
+  }
+
+  .font-comfortaa {
     font-family: 'Comfortaa', sans-serif;
   }
-  .font-dancing-script{
+
+  .font-dancing-script {
     font-family: 'Dancing Script', cursive;
   }
-  
-  .home .content{
+
+  .font-Lugrasimo {
+    font-family: 'Lugrasimo', cursive;
+  }
+
+  .font-pacifico {
+    font-family: 'Pacifico', cursive;
+  }
+
+  /*  */
+  .home .content {
     display: none;
   }
-  .home .content.active{
+
+  .home .content.active {
     display: block;
   }
+
   .home .video-slide {
     clip-path: circle(0% at 0 50%);
   }
@@ -88,7 +121,7 @@ sec: "#08A6FF", */
 
   .home .slider-navigation .nav-btn.active {
     background: #08A6FF;
-    
+
   }
 
   .home .slider-navigation .nav-btn:not(:last-child) {
@@ -99,13 +132,3 @@ sec: "#08A6FF", */
 
 }
 
-/* .home::before{
-  z-index: 777;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right ,#41fbef19,#08a4ff20);
-  top: 0;
-  left: 0;
-} */
