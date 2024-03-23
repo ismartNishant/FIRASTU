@@ -75,7 +75,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn2 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
                         Read More
                     </NavLink>
                 </div>
@@ -88,7 +88,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn2 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
                         Read More
                     </NavLink>
                 </div>
@@ -101,7 +101,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn2 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
                         Read More
                     </NavLink>
                 </div>
@@ -115,7 +115,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn2 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
                         Read More
                     </NavLink>
                 </div>
@@ -128,7 +128,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn2 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
                         Read More
                     </NavLink>
                 </div>

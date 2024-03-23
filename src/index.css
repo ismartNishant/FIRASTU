@@ -48,7 +48,7 @@ sec: "#08A6FF", */
   }
   
   .btn3 {
-    @apply py-2 px-4 bg-gradient-to-r from-sec to-pri  rounded-sm hover:scale-90 duration-200 ease-in hover:rounded-full
+    @apply py-3 px-8 bg-gradient-to-r from-sec to-pri  rounded-sm hover:scale-90 duration-200 ease-in hover:rounded-full
   }
 }
 
