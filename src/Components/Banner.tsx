@@ -1,19 +1,19 @@
 import type { FC } from 'react';
 import { bg } from './Imports';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 interface BannerProps { }
 
 const Banner: FC<BannerProps> = () => {
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+    // const settings = {
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
 
-    };
+    // };
     return (
         <div className="slider-container">
 
