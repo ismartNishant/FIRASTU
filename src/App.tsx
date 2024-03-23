@@ -9,6 +9,7 @@ import Upcoming from './Components/Upcoming';
 import Services from './Components/services/Services';
 
 
+
 function App() {
 
   const router = createBrowserRouter(
@@ -20,6 +21,8 @@ function App() {
         <Route path='/upcoming' element={<Upcoming />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<PageNotFound />} />
+      
+
       </Route>
     )
   )

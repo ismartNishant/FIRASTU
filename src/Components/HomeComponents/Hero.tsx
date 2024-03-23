@@ -68,7 +68,7 @@ const Hero: FC = () => {
 
             {/* home content */}
             <div className='content z-10 w-full sm:w-[80%] sm:mt-20  active'>
-                <h1 className='text-5xl md:text-8xl  font-thin'>Never Stop</h1>
+                <h1 className='text-5xl md:text-8xl  font-thin mb-3'>Never Stop</h1>
                 <h1 className='text-6xl md:text-9xl font-extrabold'>Exploring</h1>
                 <p className='text-[12px] md:text-lg my-5 text-gray-200'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem omnis enim blanditiis voluptatem rerum! Quos, aliquam laboriosam! Commodi, sed vitae expedita quam similique placeat, eum
@@ -81,7 +81,7 @@ const Hero: FC = () => {
                 </div>
             </div>
             <div className='content z-10 w-full sm:w-[80%] sm:mt-20'>
-                <h1 className='text-5xl md:text-8xl  font-thin'>Make Tour</h1>
+                <h1 className='text-5xl md:text-8xl  font-thin mb-3'>Make Tour</h1>
                 <h1 className='text-6xl md:text-9xl font-extrabold'>Amazing</h1>
                 <p className='text-[12px] md:text-lg my-5 text-gray-200'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem omnis enim blanditiis voluptatem rerum! Quos, aliquam laboriosam! Commodi, sed vitae expedita quam similique placeat, eum
@@ -94,7 +94,7 @@ const Hero: FC = () => {
                 </div>
             </div>
             <div className='content z-10 w-full sm:w-[80%] sm:mt-20'>
-                <h1 className='text-5xl md:text-8xl  font-thin'>Explore The</h1>
+                <h1 className='text-5xl md:text-8xl  font-thin mb-3'>Explore The</h1>
                 <h1 className='text-6xl md:text-9xl font-extrabold'>New World</h1>
                 <p className='text-[12px] md:text-lg my-5 text-gray-200'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem omnis enim blanditiis voluptatem rerum! Quos, aliquam laboriosam! Commodi, sed vitae expedita quam similique placeat, eum
@@ -108,7 +108,7 @@ const Hero: FC = () => {
             </div>
 
             <div className='content z-10 w-full sm:w-[80%] sm:mt-20'>
-                <h1 className='text-5xl md:text-8xl  font-thin'>Dare to Dream</h1>
+                <h1 className='text-5xl md:text-8xl  font-thin mb-3'>Dare to Dream</h1>
                 <h1 className='text-6xl md:text-9xl font-extrabold'>Dare to Explore</h1>
                 <p className='text-[12px] md:text-lg my-5 text-gray-200'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem omnis enim blanditiis voluptatem rerum! Quos, aliquam laboriosam! Commodi, sed vitae expedita quam similique placeat, eum
@@ -121,7 +121,7 @@ const Hero: FC = () => {
                 </div>
             </div>
             <div className='content z-10 w-full sm:w-[80%] sm:mt-20'>
-                <h1 className='text-5xl md:text-8xl  font-thin'>Journey Into</h1>
+                <h1 className='text-5xl md:text-8xl  font-thin mb-3'>Journey Into</h1>
                 <h1 className='text-6xl md:text-9xl font-extrabold'>Adventure</h1>
                 <p className='text-[12px] md:text-lg my-5 text-gray-200'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem omnis enim blanditiis voluptatem rerum! Quos, aliquam laboriosam! Commodi, sed vitae expedita quam similique placeat, eum

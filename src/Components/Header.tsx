@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 // import ThemeBtn from "./ThemeBtn";
-// import logoblack from "../assets/logos/logo-black.svg";
+import logoblack from "../assets/logos/logo-black.svg";
 import logowhite from '../assets/logos/logo-white.svg'
 // import TopBar from "./TopBar";
 // import useTheme from "../Context/Theme";
@@ -9,6 +9,18 @@ import { Menu, X } from 'lucide-react'
 
 const Header = () => {
     // const { themeMode, } = useTheme();
+    const [isscrolled, setIsscrolled] = useState(false);
+
+    const ChangeNav = () => {
+        if (window.scrollY >= 100) {
+            setIsscrolled(true)
+        }
+        else {
+        setIsscrolled(false)
+        }
+    }
+
+    window.addEventListener("scroll", ChangeNav)
 
     const [nav, setNav] = useState(false)
     const HanldeNav = () => {
@@ -32,7 +44,6 @@ const Header = () => {
             name: 'Services',
             path: '/services'
         },
-       
         {
             name: 'Contact',
             path: '/contact'
@@ -40,14 +51,14 @@ const Header = () => {
     ]
 
     return (
-        <header className='w-full z-50 top-0 fixed bg-black/20'>
+        <header className={`${isscrolled ? "bg-white w-full z-50 top-0 fixed" : " bg-black/20 w-full z-50 top-0 fixed"}`} >
             <nav className=' border-gray-200 px-3 py-2 lg:px-6  '>
                 <div className='flex  gap-3 items-center mx-auto max-w-screen-xl justify-between'>
                     <div className=''>
                         <NavLink to='/' className=''>
                             <img
                                 className='w-72 sm:w-60'
-                                src={logowhite}
+                                src={isscrolled ?  logoblack : logowhite }
                                 alt='....logo....'
                             />
                         </NavLink>
@@ -60,8 +71,8 @@ const Header = () => {
                                         key={item.name}
                                         className={({ isActive }) =>
                                             `${isActive
-                                                ? 'text-sec bg-white rounded-sm'
-                                                : ' text-white'
+                                                ?  `text-sec  bg-white rounded-sm ${isscrolled ? "underline underline-offset-8":""}`
+                                                : `${isscrolled ? "text-black ":"text-white"}`
                                             }`
                                         }
                                         to={item.path}
@@ -75,7 +86,7 @@ const Header = () => {
                         <div className='hidden lg:block  gap-2'>
                             <NavLink
                                 to='/'
-                                className='btn1 font-medium bg-gradient-to-r bg-pri from-sec rounded-sm text-white '
+                                className={`btn1 ${isscrolled ? "text-black":"text-white"}`}
                             >
                                 Book Now
                             </NavLink>
