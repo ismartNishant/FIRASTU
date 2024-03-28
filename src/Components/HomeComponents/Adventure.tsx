@@ -11,10 +11,10 @@ const Adventure: FC<AdventureProps> = () => {
     const settings = {
         dots: false,
         infinite: true,
-        // autoplay: true,
-         // autoplaySpeed: 2000,
-        // cssEase: "linear",
-        speed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -50,7 +50,7 @@ const Adventure: FC<AdventureProps> = () => {
 
             <div className="slider-container mx-auto relative ">
                 <Slider {...settings} className='mx-auto flex flex-row justify-center items-center py-16 gap-8 '>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl  activity  '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden  activity  '>
                         <img className='h-56 w-full mx-auto  object-cover  rounded-t-xl    ' src={trek1} />
                         <div className='text-center py-4 px-2 bg-sky-100  '>
                             <div>

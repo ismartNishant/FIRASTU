@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 // import ThemeBtn from "./ThemeBtn";
 import logoblack from "../assets/logos/logo-black.svg";
@@ -7,7 +7,9 @@ import logowhite from '../assets/logos/logo-white.svg'
 // import useTheme from "../Context/Theme";
 import { Menu, X } from 'lucide-react'
 
-const Header = () => {
+interface HeaderProps { }
+
+const Header: FC<HeaderProps> = () => {
     // const { themeMode, } = useTheme();
     const [isscrolled, setIsscrolled] = useState(false);
 
@@ -16,7 +18,7 @@ const Header = () => {
             setIsscrolled(true)
         }
         else {
-        setIsscrolled(false)
+            setIsscrolled(false)
         }
     }
 
@@ -58,7 +60,7 @@ const Header = () => {
                         <NavLink to='/' className=''>
                             <img
                                 className='w-72 sm:w-60'
-                                src={isscrolled ?  logoblack : logowhite }
+                                src={isscrolled ? logoblack : logowhite}
                                 alt='....logo....'
                             />
                         </NavLink>
@@ -71,13 +73,13 @@ const Header = () => {
                                         key={item.name}
                                         className={({ isActive }) =>
                                             `${isActive
-                                                ?  `text-sec  bg-white rounded-sm ${isscrolled ? "underline underline-offset-8":""}`
-                                                : `${isscrolled ? "text-black ":"text-white"}`
+                                                ? `text-sec  bg-white rounded-sm ${isscrolled ? "underline underline-offset-8" : ""}`
+                                                : `${isscrolled ? "text-black " : "text-white"}`
                                             }`
                                         }
                                         to={item.path}
                                     >
-                                        <li className='nav-item text-[16px]'>{item.name} </li>
+                                        <li className='nav-item text-[16px] font-medium'>{item.name} </li>
                                     </NavLink>
                                 ))}
                             </ol>
@@ -86,7 +88,7 @@ const Header = () => {
                         <div className='hidden lg:block  gap-2'>
                             <NavLink
                                 to='/'
-                                className={`btn1 ${isscrolled ? "text-black":"text-white"}`}
+                                className={`btn1 ${isscrolled ? "text-black" : "text-white"}`}
                             >
                                 Book Now
                             </NavLink>
@@ -98,7 +100,7 @@ const Header = () => {
                         {!nav ? (
                             <Menu
                                 size={40}
-                                className={`cursor-pointer hover:text-sec active:text-sec ${isscrolled ? "text-black":"text-white"} `}
+                                className={`cursor-pointer hover:text-sec active:text-sec ${isscrolled ? "text-black" : "text-white"} `}
                             />
                         ) : (
                             <X
@@ -127,7 +129,7 @@ const Header = () => {
                                         }
                                         to={item.path}
                                     >
-                                        <li className='nav-item text-[19px] '>{item.name} </li>
+                                        <li className='nav-item text-[19px] font-medium '>{item.name} </li>
                                     </NavLink>
                                 ))}
                             </ol>

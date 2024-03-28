@@ -44,11 +44,11 @@ sec: "#08A6FF", */
   }
 
   .btn-2 {
-    @apply px-4 py-2 md:px-8 md:text-xl text-sm md:py-3 text-white font-semibold bg-gradient-to-r from-sec to-pri hover:text-sec hover:from-white hover:to-white hover:scale-90 duration-200 ease-in
+    @apply px-4 py-2 md:px-8 md:text-xl text-sm md:py-3 text-white font-semibold bg-gradient-to-r from-sec to-pri hover:text-sec hover:from-white hover:to-white hover:scale-90 duration-200 ease-linear
   }
 
   .btn3 {
-    @apply py-2 px-8 bg-gradient-to-r from-sec to-pri rounded-sm hover:scale-90 duration-200 ease-in hover:rounded-full
+    @apply py-2 px-8 bg-gradient-to-r from-sec to-pri rounded-sm hover:scale-90 duration-200 ease-linear hover:rounded-full
   }
 }
 
@@ -162,6 +162,14 @@ sec: "#08A6FF", */
   top: 5%;
 }
 
+
+.btn4{
+  border-color: #0c0c0c;
+}
+.btn4:hover{
+  background: #0c0c0c;
+  color: white;
+}
 @media (max-width: 780px) {
 
   .slick-prev {

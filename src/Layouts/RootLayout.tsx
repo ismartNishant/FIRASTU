@@ -36,7 +36,7 @@ const RootLayout = () => {
 
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme, setThemeMode }}>
       <div className=' relative'>
-        <Header  />
+        <Header   />
         <main className='mx-auto  '>
           <div className='mx-auto dark:text-white  '>
             <Outlet />
