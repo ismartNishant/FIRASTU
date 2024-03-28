@@ -12,10 +12,10 @@ const Adventure: FC<AdventureProps> = () => {
         dots: false,
         infinite: true,
         // autoplay: true,
-        speed: 2000,
-        // autoplaySpeed: 2000,
+         // autoplaySpeed: 2000,
         // cssEase: "linear",
-        slidesToShow: 3,
+        speed: 2000,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {
@@ -50,11 +50,11 @@ const Adventure: FC<AdventureProps> = () => {
 
             <div className="slider-container mx-auto relative ">
                 <Slider {...settings} className='mx-auto flex flex-row justify-center items-center py-16 gap-8 '>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
-                        <img className='h-56 w-full mx-auto  object-cover rounded-md  ' src={trek1} />
-                        <div className='text-center p-4 shadow-md '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl  activity  '>
+                        <img className='h-56 w-full mx-auto  object-cover  rounded-t-xl    ' src={trek1} />
+                        <div className='text-center py-4 px-2 bg-sky-100  '>
                             <div>
-                                <h1 className='text-2xl text-sec font-semibold font-baloo my-3'>Trekking</h1>
+                                <h1 className='text-2xl text-sec font-semibold font-baloo my-1'>Trekking</h1>
                                 <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
                             </div>
                             <div className='flex justify-center  items-center pt-10'>
@@ -64,40 +64,11 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
-                        <img className='h-56 w-full mx-auto  object-cover rounded-md' src={camp1} />
-                        <div className='text-center p-4'>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl  activity  '>
+                        <img className='h-56 w-full mx-auto  object-cover  rounded-t-xl ' src={camp1} />
+                        <div className='text-center py-4 px-2 bg-sky-100 '>
                             <div>
-                                <h1 className='text-2xl text-sec font-semibold font-baloo my-3'>Camping</h1>
-                                <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
-                            </div>
-
-                            <div className='flex justify-center  items-center pt-10'>
-                                <NavLink to='/' className='btn3 text-white font-semibold'>
-                                    Read More
-                                </NavLink>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1  '>
-                        <img className='h-56 w-full mx-auto  object-cover rounded-md' src={turf2} />
-                        <div className='text-center p-4'>
-                            <div>
-                                <h1 className='text-2xl text-sec font-semibold font-baloo my-3'>Turf Activities</h1>
-                                <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
-                            </div>
-                            <div className='flex justify-center  items-center pt-10'>
-                                <NavLink to='/' className='btn3 text-white font-semibold'>
-                                    Read More
-                                </NavLink>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
-                        <img className='h-56 w-full mx-auto  object-cover rounded-md' src={kayaking1} />
-                        <div className='text-center p-4'>
-                            <div>
-                                <h1 className='text-2xl text-sec font-semibold font-baloo my-3'>Kayaking</h1>
+                                <h1 className='text-2xl text-sec font-semibold font-baloo my-1'>Camping</h1>
                                 <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
                             </div>
 
@@ -108,11 +79,11 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
-                        <img className='h-56 w-full mx-auto  object-cover rounded-md' src={offbeattrek2} />
-                        <div className='text-center p-4'>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl  activity   '>
+                        <img className='h-56 w-full mx-auto  object-cover  rounded-t-xl ' src={turf2} />
+                        <div className='text-center py-4 px-2 bg-sky-100 '>
                             <div>
-                                <h1 className='text-2xl text-sec font-semibold font-baloo my-3'>Offbeat Treks</h1>
+                                <h1 className='text-2xl text-sec font-semibold font-baloo my-1'>Turf Activities</h1>
                                 <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
                             </div>
                             <div className='flex justify-center  items-center pt-10'>
@@ -122,11 +93,40 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
-                        <img className='h-56 w-full mx-auto  object-cover rounded-md' src={cycling1} />
-                        <div className='text-center p-4 '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl  activity  '>
+                        <img className='h-56 w-full mx-auto  object-cover  rounded-t-xl ' src={kayaking1} />
+                        <div className='text-center py-4 px-2 bg-sky-100 '>
                             <div>
-                                <h1 className='text-2xl text-sec font-semibold font-baloo my-3'>Cycling</h1>
+                                <h1 className='text-2xl text-sec font-semibold font-baloo my-1'>Kayaking</h1>
+                                <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
+                            </div>
+
+                            <div className='flex justify-center  items-center pt-10'>
+                                <NavLink to='/' className='btn3 text-white font-semibold'>
+                                    Read More
+                                </NavLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl  activity  '>
+                        <img className='h-56 w-full mx-auto  object-cover  rounded-t-xl ' src={offbeattrek2} />
+                        <div className='text-center py-4 px-2 bg-sky-100 '>
+                            <div>
+                                <h1 className='text-2xl text-sec font-semibold font-baloo my-1'>Offbeat Treks</h1>
+                                <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
+                            </div>
+                            <div className='flex justify-center  items-center pt-10'>
+                                <NavLink to='/' className='btn3 text-white font-semibold'>
+                                    Read More
+                                </NavLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl  activity  '>
+                        <img className='h-56 w-full mx-auto  object-cover  rounded-t-xl ' src={cycling1} />
+                        <div className='text-center py-4 px-2 bg-sky-100   '>
+                            <div>
+                                <h1 className='text-2xl text-sec font-semibold font-baloo my-1'>Cycling</h1>
                                 <p className='text-sm my-2' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur</p>
                             </div>
                             <div className='flex justify-center  items-center pt-10'>

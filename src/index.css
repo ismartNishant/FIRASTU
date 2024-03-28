@@ -136,11 +136,12 @@ sec: "#08A6FF", */
 
 
 /* //--- ----*/
- #slider-boxes{
+#slider-boxes {
   display: flex !important;
 
 }
-.slick-slide  > div:first-child {
+
+.slick-slide > div:first-child {
   margin: 0px 10px !important;
 }
 
@@ -162,16 +163,26 @@ sec: "#08A6FF", */
 }
 
 @media (max-width: 780px) {
+
   .slick-prev {
     position: absolute;
-
     left: 80%;
   }
 
   .slick-next {
     position: absolute;
     right: 5%;
-
   }
 
+  .slick-slide > div:first-child {
+    margin: 0px !important;
+  }
+
+
+}
+
+@media (max-width: 580px) {
+  .slick-arrow::before {
+    font-size: 30px;
+  }
 }
