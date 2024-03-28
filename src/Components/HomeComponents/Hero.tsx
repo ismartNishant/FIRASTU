@@ -13,6 +13,7 @@ const Hero: FC = () => {
     useEffect(() => {
         const btns = document.querySelectorAll<HTMLDivElement>('.nav-btn');
         const slides = document.querySelectorAll<HTMLVideoElement>('.video-slide');
+        const contents = document.querySelectorAll<HTMLDivElement>('.content');
 
         const sliderNav = (manual: number) => {
             setActiveSlide(manual);
@@ -24,6 +25,13 @@ const Hero: FC = () => {
             });
 
             slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === manual) {
+                    slide.classList.add('active');
+                }
+            });
+
+            contents.forEach((slide, index) => {
                 slide.classList.remove('active');
                 if (index === manual) {
                     slide.classList.add('active');
@@ -75,7 +83,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn-2'>
                         Read More
                     </NavLink>
                 </div>
@@ -88,7 +96,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn-2'>
                         Read More
                     </NavLink>
                 </div>
@@ -101,7 +109,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn-2'>
                         Read More
                     </NavLink>
                 </div>
@@ -115,7 +123,7 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn-2'>
                         Read More
                     </NavLink>
                 </div>
@@ -128,20 +136,20 @@ const Hero: FC = () => {
                     doloremque eaque perferendis repudiandae dolorum.
                 </p>
                 <div className='flex justify-start items-center'>
-                    <NavLink to='/' className='btn3 md:my-3 font-semibold'>
+                    <NavLink to='/' className='btn-2'>
                         Read More
                     </NavLink>
                 </div>
             </div>
 
             <div className='absolute right-4 hidden lg:right-28 z-10 sm:flex flex-col gap-8 md:gap-8'>
-                <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>                 
+                <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
                     <BsFacebook className='lg:text-4xl xl:text-3xl  text-3xl  ' />
                 </Link>
-                <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>                   
+                <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
                     <BsTwitterX className='lg:text-4xl xl:text-3xl  text-3xl ' />
                 </Link>
-                <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>                  
+                <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
                     <BsInstagram className='lg:text-4xl xl:text-3xl  text-3xl ' />
                 </Link>
                 <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
@@ -150,16 +158,16 @@ const Hero: FC = () => {
             </div>
             <div className=' z-20 flex-row flex gap-5 md:hidden mt-8  '>
                 <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
-                    <BsFacebook  className='text-2xl' />
+                    <BsFacebook className='text-2xl' />
                 </Link>
                 <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
-                    <BsTwitterX  className='text-2xl' />
+                    <BsTwitterX className='text-2xl' />
                 </Link>
                 <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
-                    <BsInstagram  className='text-2xl'/>
+                    <BsInstagram className='text-2xl' />
                 </Link>
                 <Link to='/' className='hover:text-sec hover:scale-125 duration-300 ease-linear'>
-                    <BsWhatsapp  className='text-2xl'/>
+                    <BsWhatsapp className='text-2xl' />
                 </Link>
             </div>
 

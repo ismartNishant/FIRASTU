@@ -51,7 +51,7 @@ const Header = () => {
     ]
 
     return (
-        <header className={`${isscrolled ? "bg-white w-full z-50 top-0 fixed" : " bg-black/20 w-full z-50 top-0 fixed"}`} >
+        <header className={`${isscrolled ? "bg-white w-full z-50 top-0 fixed shadow-md" : " bg-black/20 w-full z-50 top-0 fixed"}`} >
             <nav className=' border-gray-200 px-3 py-2 lg:px-6  '>
                 <div className='flex  gap-3 items-center mx-auto max-w-screen-xl justify-between'>
                     <div className=''>
@@ -98,7 +98,7 @@ const Header = () => {
                         {!nav ? (
                             <Menu
                                 size={40}
-                                className='cursor-pointer hover:text-sec active:text-sec text-white'
+                                className={`cursor-pointer hover:text-sec active:text-sec ${isscrolled ? "text-black":"text-white"} `}
                             />
                         ) : (
                             <X

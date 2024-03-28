@@ -1,14 +1,16 @@
 import type { FC } from 'react';
-import Banner from './Banner';
-
-interface AboutProps {}
+import BannerSec from './AboutComponents/BannerSec';
+interface AboutProps { }
 
 const About: FC<AboutProps> = () => {
     return (
         <div>
-            <Banner />
+            <BannerSec />
+            <div>
 
+            </div>
         </div>
+
     );
 }
 

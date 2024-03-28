@@ -40,15 +40,15 @@ sec: "#08A6FF", */
   }
 
   .btn1 {
-    @apply py-2 px-4 font-medium bg-gradient-to-r from-sec to-pri  duration-200 hover:rounded-full  ease-in 
+    @apply py-2 px-4 font-medium bg-gradient-to-r from-sec to-pri duration-200 hover:rounded-full ease-in
   }
 
-  .btn2 {
-    @apply px-3 py-2 sm:px-5 sm:py-3 bg-white text-[14px] sm:text-[16px] font-medium hover:bg-gradient-to-r hover:from-sec hover:to-pri hover:text-white text-sec rounded-sm hover:scale-90 duration-200 ease-in
+  .btn-2 {
+    @apply px-4 py-2 md:px-8 md:text-xl text-sm md:py-3 text-white font-semibold bg-gradient-to-r from-sec to-pri hover:text-sec hover:from-white hover:to-white hover:scale-90 duration-200 ease-in
   }
-  
+
   .btn3 {
-    @apply py-3 px-8 bg-gradient-to-r from-sec to-pri  rounded-sm hover:scale-90 duration-200 ease-in hover:rounded-full
+    @apply py-2 px-8 bg-gradient-to-r from-sec to-pri rounded-sm hover:scale-90 duration-200 ease-in hover:rounded-full
   }
 }
 
@@ -128,10 +128,48 @@ sec: "#08A6FF", */
     margin-right: 20px;
   }
 
-
+  .about .rounded-lg {
+    border-radius: 0rem;
+  }
 
 }
 
-.slick-slider {
-  margin:0px 15px;
+.slick-slide div {
+  margin: 0px 10px !important;
+}
+
+.slick-arrow::before {
+  color: #08A6FF;
+  font-size: 40px;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 5%;
+  left: 92%;
+}
+
+.slick-next {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+
+@media (max-width: 780px) {
+  .slick-prev {
+    position: absolute;
+
+    left: 80%;
+  }
+
+  .slick-next {
+    position: absolute;
+    right: 5%;
+
+  }
+
+  .slick-slide div{
+    margin: 0px 5px auto;
+
+  }
 }

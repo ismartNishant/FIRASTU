@@ -38,7 +38,7 @@ const RootLayout = () => {
       <div className=' relative'>
         <Header  />
         <main className='mx-auto  '>
-          <div className='mx-auto dark:text-white min-h-[600px] '>
+          <div className='mx-auto dark:text-white  '>
             <Outlet />
           </div>
         </main>
