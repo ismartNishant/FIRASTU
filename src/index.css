@@ -134,7 +134,13 @@ sec: "#08A6FF", */
 
 }
 
-.slick-slide div {
+
+/* //--- ----*/
+ #slider-boxes{
+  display: flex !important;
+
+}
+.slick-slide  > div:first-child {
   margin: 0px 10px !important;
 }
 
@@ -168,8 +174,4 @@ sec: "#08A6FF", */
 
   }
 
-  .slick-slide div{
-    margin: 0px 5px auto;
-
-  }
 }

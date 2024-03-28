@@ -50,7 +50,7 @@ const Adventure: FC<AdventureProps> = () => {
 
             <div className="slider-container mx-auto relative ">
                 <Slider {...settings} className='mx-auto flex flex-row justify-center items-center py-16 gap-8 '>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
                         <img className='h-56 w-full mx-auto  object-cover rounded-md  ' src={trek1} />
                         <div className='text-center p-4 shadow-md '>
                             <div>
@@ -64,7 +64,7 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
                         <img className='h-56 w-full mx-auto  object-cover rounded-md' src={camp1} />
                         <div className='text-center p-4'>
                             <div>
@@ -79,7 +79,7 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity  '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1  '>
                         <img className='h-56 w-full mx-auto  object-cover rounded-md' src={turf2} />
                         <div className='text-center p-4'>
                             <div>
@@ -93,7 +93,7 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
                         <img className='h-56 w-full mx-auto  object-cover rounded-md' src={kayaking1} />
                         <div className='text-center p-4'>
                             <div>
@@ -108,7 +108,7 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
                         <img className='h-56 w-full mx-auto  object-cover rounded-md' src={offbeattrek2} />
                         <div className='text-center p-4'>
                             <div>
@@ -122,7 +122,7 @@ const Adventure: FC<AdventureProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity '>
+                    <div className='flex flex-col   h-[450px] justify-between  rounded-xl overflow-hidden activity p-1 '>
                         <img className='h-56 w-full mx-auto  object-cover rounded-md' src={cycling1} />
                         <div className='text-center p-4 '>
                             <div>
